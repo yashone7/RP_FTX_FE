@@ -1,0 +1,44 @@
+{
+  "name": "rp_ftx_fe",
+  "version": "0.0.0",
+  "author": {"name":"Yashwanth Somayajula && Ratan Dheeraj Kadirikota"},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bulma": "^0.9.3",
+    "daisyui": "^1.16.2",
+    "deck.gl": "^8.6.4",
+    "gh-pages": "^3.2.3",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "maplibre-gl": "^1.15.2",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-icons": "^4.3.1",
+    "react-map-gl": "^5.3.17",
+    "react-redux": "^7.2.6",
+    "react-resize-detector": "^6.7.6",
+    "react-router-dom": "^5.3.0",
+    "react-select": "^5.2.1",
+    "react-spinners": "^0.11.0",
+    "react-toastify": "^8.1.0",
+    "recharts": "^2.1.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "theme-change": "^2.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.6.4"
+  },
+  "proxy":"https://dist-cart.herokuapp.com"
+}

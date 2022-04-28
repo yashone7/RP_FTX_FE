@@ -1,0 +1,12 @@
+.closeButton {
+  position: relative;
+  right: 1510px;
+  top: 1400px;
+}
+.buttonCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 10%;
+}

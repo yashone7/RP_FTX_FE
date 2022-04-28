@@ -1,0 +1,215 @@
+.layout {
+  min-height: 100vh;
+  height: auto;
+}
+
+.layout-navbar {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 3px -3px rgba(27, 27, 27, 0.342);
+  display: flex;
+  padding: 0.6em 0;
+  justify-content: space-between;
+}
+
+.my-container {
+  width: 95%;
+  margin: 2em auto;
+}
+
+.layout-sidebar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid gray;
+  /* background-color: #303a47; */
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-icon {
+  margin: 0 0.8em;
+}
+
+@media screen and (min-width: 1024px) {
+  .layout {
+    height: 100vh;
+    display: flex;
+  }
+
+  .layout-sidebar,
+  .layout-sidebar-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* overflow: auto; */
+    width: 18%;
+    height: 100%;
+  }
+
+  /* .layout-main-shrink  */
+  .layout-main {
+    position: relative;
+    margin-left: 18%;
+    width: 100%;
+    transition: all 0.3s;
+    overflow: auto;
+    background-color: #ffffff;
+  }
+
+  .sidebar-hide {
+    display: none;
+  }
+
+  .mainbar-show {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    transition: all 0.3s;
+  }
+
+  .layout-main-shrink {
+    position: relative;
+    /* margin-left: 17%; */
+    width: 100%;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .icon-group {
+    display: flex;
+    margin: 0 0.8em;
+  }
+
+  .menu-list {
+    display: flex;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .nav-items {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .layout {
+    height: 100vh;
+    display: flex;
+  }
+
+  .layout-sidebar {
+    display: none;
+  }
+
+  .layout-main {
+    position: relative;
+    width: 100%;
+    transition: all 0.3s;
+    overflow: auto;
+  }
+
+  .layout-sidebar-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+  }
+
+  .layout-main-shrink {
+    position: relative;
+    margin-left: 25%;
+    width: 100%;
+    transition: all 0.3s;
+  }
+
+  .icon-group-mobile-toggle {
+    display: block;
+    position: absolute;
+    top: 135%;
+    right: 0;
+    width: auto;
+    z-index: 1;
+    box-shadow: ghostwhite;
+    background-color: #ffffff;
+    border-radius: 2%;
+    transition: all 0.3s;
+    box-shadow: 3px 4px 11px 0px rgba(125, 125, 125, 0.6);
+  }
+
+  .menu-group-mobile {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-mobile {
+    margin: 0 1.2em;
+  }
+
+  .icon-group {
+    display: none;
+  }
+  .menu-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 10em;
+  }
+
+  .nav-items {
+    display: flex;
+    margin: 0;
+    padding: 0.8em 0.4em;
+    cursor: pointer;
+  }
+
+  .menu-list > li:hover {
+    background-color: rgba(172, 172, 172, 0.493);
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+  .layout {
+    height: 100vh;
+    display: flex;
+  }
+
+  .layout-sidebar {
+    display: none;
+  }
+
+  .layout-main {
+    position: relative;
+    width: 100%;
+    background-color: #f5f0fa;
+  }
+
+  .brand-logo-1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .layout-sidebar-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+  }
+
+  .layout-main-shrink {
+    position: relative;
+    margin-left: 60%;
+    width: 100%;
+  }
+}
+
+.vis-card-height {
+  height: 85vh;
+}
